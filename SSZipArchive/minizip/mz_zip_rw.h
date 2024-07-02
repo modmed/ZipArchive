@@ -1,7 +1,7 @@
 /* mz_zip_rw.h -- Zip reader/writer
    part of the minizip-ng project
 
-   Copyright (C) 2010-2021 Nathan Moinvaziri
+   Copyright (C) Nathan Moinvaziri
      https://github.com/zlib-ng/minizip-ng
 
    This program is distributed under the terms of the same license as zlib.
@@ -86,7 +86,7 @@ int32_t mz_zip_reader_entry_is_dir(void *handle);
 /* Gets the current entry is a directory */
 
 int32_t mz_zip_reader_entry_save(void *handle, void *stream, mz_stream_write_cb write_cb);
-/* Save the current entry to a steam */
+/* Save the current entry to a stream */
 
 int32_t mz_zip_reader_entry_save_process(void *handle, void *stream, mz_stream_write_cb write_cb);
 /* Saves a portion of the current entry to a stream callback */
